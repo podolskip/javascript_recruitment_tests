@@ -1,0 +1,60 @@
+{
+  "name": "recruitment-tests",
+  "version": "1.0.0",
+  "description": "Repo holds most common JavaScript tests. It helps to prepare for recritment process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --colors --watchAll",
+    "jestCover": "jest --coverage --colors ",
+    "addCommit": " git add --all && git commit -m "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/podolskip/javascript_recruitment_tests.git"
+  },
+  "keywords": [
+    "javascript",
+    "rectuitment",
+    "test",
+    "excersises"
+  ],
+  "author": "Patryk Podolski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/podolskip/javascript_recruitment_tests/issues"
+  },
+  "homepage": "https://github.com/podolskip/javascript_recruitment_tests#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/setup/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>",
+      "<rootDir>/src"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/src",
+      "<rootDir>/__tests__",
+      "src",
+      "__tests__"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)?$": "babel-jest"
+    }
+  }
+}
