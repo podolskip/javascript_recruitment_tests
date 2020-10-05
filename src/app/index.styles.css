@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.mainSemanticElement {
+  width: Calc(100vw-50);
+  text-align: center;
+}
+
+.mainSemanticElement__headSection {
+  color: red;
+  background-color: lightblue;
+}
+
+.mainSemanticElement__navSection {
+  color: red;
+  background-color: lightcyan;
+}
+
+.mainSemanticElement__footer {
+  color: red;
+  background-color: blue;
+}
+
+.mainSemanticElement__tilesSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.tille {
+  border-radius: 10%;
+  background-color: lightgoldenrodyellow;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  transition: all 0.5s ease-in 0.1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tille:hover {
+  width: 115px;
+  height: 115px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.tille__body {
+  margin: 10px 0 0 0;
+  height: 95%;
+  width: 100%;
+}
+
+.tille__footer {
+  background-color: lightsalmon;
+  height: 5%;
+}
