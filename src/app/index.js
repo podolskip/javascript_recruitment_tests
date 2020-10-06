@@ -55,8 +55,12 @@ document.getElementById("app").innerHTML = `
   const getListOfUsers = function () {
     return new Promise(function (resolve, reject) {
       const xhr = new XMLHttpRequest();
-      xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
-      xhr.send();
+      // xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+      xhr.open("GET", "http://localhost:3000/users");
+      xhr.setRequestHeader('Access-Control-Allow-Origin','*')
+      xhr.withCredentials = true;
+      xhr.setRequestHeader('credentials','include')
+      xhr.send(null);
       xhr.onload = function () {
         if (xhr.status === 200) {
           resolve(xhr.response);
